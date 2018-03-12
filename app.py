@@ -36,6 +36,7 @@ def capture_frame(frame):
     ts = time.time()
     st = datetime.datetime.fromtimestamp(ts).strftime('%Y%m%d-%H%M%S')
     global latest_timestamp
+    #TODO: Fix intervals depending on need
     if latest_timestamp != st:
         latest_timestamp = st
     else:
